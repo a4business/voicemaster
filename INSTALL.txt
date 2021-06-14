@@ -1,0 +1,21 @@
+Installation steps. 
+
+    It has specific installation procecude.   
+    Original system was designed as a hardware solution,  system comes preinstalled in  2U  rack mountable server. 
+    It has a very specific OS, which can not be installed from ISO   - only certain hardware and kernel.  
+    
+    So I made a little trick   - took Proxmox 2.0  ( this is the only proxmox which has kernel compatible with the VoiceMaster ),  and install the as Container.
+    I did not like full virtualization with QEMU , it resource consuming  - big installation file, more complicated administration ( as for me) 
+    
+    So took a vzdump of already  installed ( manually )  system, it  then install it every where on top on proxmox 2.0 
+    
+    Now, we can't intall proxmox 2.0 on some  colocation  (like Hetzner ) without mounting it as ISO, or creating own iamge. 
+    To avoide this  - I made another trick   - install Proxmox 6.0, then inside Proxmox 2.0 as VM,   and inside this proxmox 2.0 I can deploy the vzdump of the voicemaster system. 
+    
+    This  method works smoothly.  
+    
+    If any one interested   - will be glad to share my expierence 
+    
+    
+    
+    
