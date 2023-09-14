@@ -33,22 +33,27 @@ https://vimeo.com/user36231282/videos
 in 2024 the project still alive and growing.
  We have running a number of VoiceMaster servers,  providing support and security services  for them. 
 
-    - Automatic firewall generation based on information from the database  ( customer, Voip provider Gateways IP list dynamically generated and feede for the iptables firewall whitelisting )
+    - Automatic firewall generation based on information from the database: customer and  Voip provider Gateways IP
+    list dynamically generated and feede for the iptables firewall whitelisting )
     - Cluster support for Redundancy  - Live replication between Master -> Slave , and automatic takeover.
     - DB backups, restore 
 
-![image](https://github.com/a4business/voicemaster/assets/30354660/e19a556e-d051-45dc-be27-c4514052a944)
+![image](https://github.com/a4business/voicemaster/assets/30354660/bf3700ce-b9c4-406a-b27b-94cb238c950c)
+
 
 Its not good idea to run SIP proxy on default port 5060, so we always try to use random ports in setup.
 If you still want to use a default  SIP port:  5060, then it must be closed initially, so only  whitelisted IPs  has access to it.
+
 
 ![image](https://github.com/a4business/voicemaster/assets/30354660/0a8a916f-c51d-492c-a279-01215fbacb7a)
 
 Improoved rating system   :
 Provider rate definition:
+
 ![image](https://github.com/a4business/voicemaster/assets/30354660/01021aed-930c-4b28-9f2c-e19e5ab5749b)
 
 Customer Rate Definition:
+
 ![image](https://github.com/a4business/voicemaster/assets/30354660/2f27e339-02c5-4edd-be61-5d8c7dc9d29b)
 
 
